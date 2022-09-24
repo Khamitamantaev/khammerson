@@ -24,6 +24,7 @@
     "@nestjs/core": "8.2.3",
     "@nestjs/graphql": "9.1.2",
     "@nestjs/jwt": "8.0.0",
+    "@nestjs/microservices": "^8.2.3",
     "@nestjs/passport": "8.2.2",
     "@nestjs/platform-express": "8.2.3",
     "@nestjs/serve-static": "2.2.2",
@@ -35,6 +36,7 @@
     "class-validator": "0.13.2",
     "graphql": "15.7.2",
     "graphql-type-json": "0.3.2",
+    "kafkajs": "^2.2.0",
     "nest-access-control": "2.0.3",
     "nest-morgan": "1.0.1",
     "nestjs-prisma": "0.16.0",
@@ -43,10 +45,9 @@
     "passport-http": "0.3.0",
     "passport-jwt": "4.0.0",
     "reflect-metadata": "0.1.13",
+    "rxjs": "^7.5.6",
     "swagger-ui-express": "4.3.0",
-    "ts-node": "9.1.1",
-    "@nestjs/microservices": "^8.2.3",
-    "kafkajs": "^2.2.0"
+    "ts-node": "9.1.1"
   },
   "devDependencies": {
     "@nestjs/cli": "8.2.5",
@@ -70,6 +71,8 @@
   "jest": {
     "preset": "ts-jest",
     "testEnvironment": "node",
-    "modulePathIgnorePatterns": ["<rootDir>/dist/"]
+    "modulePathIgnorePatterns": [
+      "<rootDir>/dist/"
+    ]
   }
 }
