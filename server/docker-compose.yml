@@ -11,7 +11,7 @@ services:
       BCRYPT_SALT: ${BCRYPT_SALT}
       JWT_SECRET_KEY: ${JWT_SECRET_KEY}
       JWT_EXPIRATION: ${JWT_EXPIRATION}
-      DB_URL: postgres://${DB_USER}:${DB_PASSWORD}@db:5433
+      DB_URL: postgres://${DB_USER}:${DB_PASSWORD}@khammerson:5432
     depends_on:
       - migrate
   migrate:
@@ -56,6 +56,7 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
   db:
     image: postgres:12
+    container_name: khammerson
     ports:
       - ${DB_PORT}:5432
     environment:
