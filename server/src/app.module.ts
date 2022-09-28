@@ -45,6 +45,8 @@ import { GraphQLModule } from "@nestjs/graphql";
           sortSchema: true,
           playground,
           introspection: playground || introspection,
+          installSubscriptionHandlers: true,
+          debug: true
         };
       },
       inject: [ConfigService],
